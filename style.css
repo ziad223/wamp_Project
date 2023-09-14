@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  margin: 100px auto;
+}
+/* Navbar */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+.navbar h2 span {
+  font-weight: normal;
+}
+
+.navbar ul {
+  list-style: none;
+}
+.navbar ul li {
+  display: inline-block;
+  margin-right: 25px;
+  padding: 15px;
+  transition: all 0.5s ease;
+}
+.navbar ul li:hover {
+  background-color: #ccc;
+}
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  letter-spacing: 2px;
+}
+.menu {
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Header */
+
+.header {
+  background-image: url(1.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.header .header-text {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  font-size: 40px;
+  color: #fff;
+}
+.header .header-text span {
+  background-color: #000;
+  padding: 10px;
+  opacity: 0.7;
+}
+
+/* projects */
+
+.projects h2 {
+  margin-bottom: 50px;
+}
+hr {
+  margin: 50px 0px;
+  opacity: 0.5;
+}
+
+.projects .projects-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.projects .projects-content .product {
+  width: 24%;
+  position: relative;
+}
+.projects .projects-content .product img {
+  width: 100%;
+}
+.projects .projects-content .product p {
+  background-color: #000;
+  padding: 10px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+}
+
+/* About */
+
+.about-text {
+  margin-bottom: 100px;
+}
+.chars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.chars .char {
+  width: 24%;
+}
+.chars .char > * {
+  margin-top: 15px;
+}
+.chars .char img {
+  width: 100%;
+}
+.chars .char h4 {
+  font-weight: 400;
+  opacity: 0.5;
+}
+.chars .char button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 18px;
+}
+.chars .char button:hover {
+  background-color: #ddd;
+}
+
+/* Contact */
+
+.contact p {
+  margin-bottom: 40px;
+}
+.contact input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+}
+.contact input:focus {
+  outline: none;
+}
+.contact button {
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.contact button:hover {
+  background-color: #ccc;
+  color: #222;
+}
+.photo img {
+  margin-left: 150px;
+  width: 80%;
+}
+
+@media screen and (max-width: 480px) {
+  ul {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .header .header-text {
+    left: 15%;
+  }
+
+  .projects .projects-content .product {
+    width: 100%;
+  }
+  .chars .char {
+    width: 100%;
+  }
+  .photo img {
+    margin-left: 50px;
+    width: 80%;
+  }
+  
+}
